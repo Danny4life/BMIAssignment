@@ -33,11 +33,14 @@ public class Main {
         boolean valid = false;
 
         // do/while loop: Ensures the user is repeatedly prompted until a valid number is entered.
+        // We use a do-while loop when we want a block of code to run at-least once no matter what happens
         do {
             System.out.print("Enter weight (lbs): ");
             String inputStr = input.nextLine();
 
             //try/catch block: Catches NumberFormatException for invalid string input.
+            // try/catch block is used to handled exception that may happen in our code
+            // to enable the smooth flow of our program execution
             try{
                 // Try parsing the input as a double
                 weight = Double.parseDouble(inputStr);
